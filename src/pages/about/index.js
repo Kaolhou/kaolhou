@@ -5,6 +5,7 @@ import instagram from '../../media/instagram.png'
 import twitter from '../../media/twitter.png'
 import twitch from '../../media/twitch-55.png'
 import gmail from '../../media/gmail.png'
+import linkedin from '../../media/linkedin.png'
 
 function About(){
     return(
@@ -15,6 +16,11 @@ function About(){
                     url={github}
                     title='Github'
                     content={<a href='https://github.com/Kaolhou' target='_blank' rel="noreferrer">Link</a>}
+                />
+                <ItemConteiner
+                    url={linkedin}
+                    title='Linkedin'
+                    content={<a href='https://www.linkedin.com/in/andremrocha-3ab925193/' target='_blank' rel="noreferrer">Link</a>}
                 />
                 <ItemConteiner
                     url={instagram}

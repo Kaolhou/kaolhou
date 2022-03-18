@@ -1,5 +1,5 @@
 import './index.css'
-import img from '../../media/image.jpeg'
+import img from '../../media/andre.jpg'
 import react from '../../media/react-original.svg'
 import css from '../../media/css3-original.svg'
 import html from '../../media/html5-original.svg'

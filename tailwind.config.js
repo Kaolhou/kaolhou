@@ -2,6 +2,9 @@ module.exports = {
   content: ["./src/**/*.js"],
   theme: {
     extend: {
+      fontFamily:{
+        'ubuntu': ['Ubuntu', 'sans-serif']
+      },
       colors:{
         pallete:{
           1: '#168aad',

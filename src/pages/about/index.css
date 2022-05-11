@@ -1,0 +1,9 @@
+.cardA{
+    @apply flex bg-[#333333] m-2 p-4 rounded-lg select-none shadow-xl max-w-[10em]
+}
+.imgBoxA>img{
+    @apply w-[100%]
+}
+.imgBoxA{
+    @apply max-w-[96em]
+}

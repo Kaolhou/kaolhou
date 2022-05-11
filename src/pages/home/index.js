@@ -12,7 +12,9 @@ import ts from '../../media/typescript-original.svg'
 import csharp from '../../media/csharp-original.svg'
 import java from '../../media/java-original.svg'
 import python from '../../media/python-original.svg'
+import tailwind from '../../media/tailwindcss-plain.svg'
 import {ItemConteiner, BoxContainer} from '../../components/cards/index'
+
 
 
 function Main(){
@@ -20,9 +22,9 @@ function Main(){
         <div className="home-conteiner">
             <div className='content'>
                 <div className="data">
-                    <h1>Olá</h1>
+                    <h1>Olá!</h1>
                     <p>
-                    Meu nome é André Mendes da Rocha, sou um desenvolverdor Júnior, moro em São Paulo - SP no Brasil, e tive me formei no curso de Informática para a Internet (período pré-integral) na Etec Parque Belém, local de início dos estudos. Atualmente estou graduando o curso bacharelado de Ciência da Computação na Faculdade Impacta Tecnologia (período matutino), onde estou revendo conhecimentos de lógica de programação na linguagem Python (Atualizado 10/05), tenho interesse maior em javascript e  desenvolvimento web (front-end ou back-end). Sou PCD H54.4 (Cegueira em um olho), C69.6 (Neoplasia maligna de órbita), S05 (Traumatismo do olho e da órbita ocular)
+                        Meu nome é André Mendes da Rocha, sou um desenvolverdor Júnior, moro em São Paulo - SP no Brasil, e tive me formei no curso de Informática para a Internet (período pré-integral) na <a href="https://www.etecpqbelem.com.br" target='_blank' rel='NOREFERRER' className='und'>Etec Parque Belém</a>, local de início dos estudos. Atualmente estou graduando o curso bacharelado de Ciência da Computação na <a href="https://www.impacta.edu.br" target='_blank' rel="noreferrer" className="und">Faculdade Impacta Tecnologia</a> (período matutino), onde estou revendo conhecimentos de lógica de programação na linguagem Python (Atualizado 10/05), tenho interesse maior em javascript e  desenvolvimento web (front-end ou back-end). Sou PCD H54.4 (Cegueira em um olho), C69.6 (Neoplasia maligna de órbita), S05 (Traumatismo do olho e da órbita ocular)
                     </p>
                 </div>
                 <div className='img'>
@@ -36,6 +38,7 @@ function Main(){
                         url={css}
                         title="CSS3"
                         content="Avançado"
+                        link="https://developer.mozilla.org/pt-BR/docs/Web/CSS"
                     />
                     <ItemConteiner
                         url={html}
@@ -85,6 +88,11 @@ function Main(){
                     <ItemConteiner
                         url={python}
                         title="Python"
+                        content="Estudando"
+                    />
+                    <ItemConteiner
+                        url={tailwind}
+                        title="Tailwind"
                         content="Estudando"
                     />
                     <ItemConteiner

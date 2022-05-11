@@ -1,3 +1,6 @@
 footer{
     @apply text-center py-6
 }
+a.und{
+    @apply underline underline-offset-2
+}

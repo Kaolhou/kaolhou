@@ -5,9 +5,9 @@
 :root{
     @apply bg-pallete-5 text-pallete-2
 }
-.home-conteiner{
-    @apply px-0 sm:px-10 lg:px-32 mx-3
+.home-conteiner, #about-container{
+    @apply px-0 sm:px-10 lg:px-32 mx-3 
 }
 h1{
-    @apply text-4xl py-3
+    @apply text-4xl py-3 font-ubuntu
 }

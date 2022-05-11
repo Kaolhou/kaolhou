@@ -1,11 +1,14 @@
 
 .content{
-    @apply flex flex-wrap gap-10 justify-center py-5
+    @apply flex flex-wrap gap-10 justify-center items-center min-h-[90vh] py-0 xl:py-20
 }
 
 .content>div.data{
-    @apply max-w-md text-justify
+    @apply max-w-md text-justify 
 }
 .content>div.img{
     @apply max-w-sm rounded-xl overflow-hidden 
+}
+.content>div.data>p{
+    @apply indent-7
 }

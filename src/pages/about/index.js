@@ -1,11 +1,41 @@
 import './index.css'
-import {BoxContainer,ItemConteiner} from '../../components/cards/index'
 import github from '../../media/github.png'
 import instagram from '../../media/instagram.png'
 import twitter from '../../media/twitter.png'
 import twitch from '../../media/twitch-55.png'
 import gmail from '../../media/gmail.png'
 import linkedin from '../../media/linkedin.png'
+
+//devido a um erro de estilização tirei a importação para poder dar classes diferentes
+import Aos from 'aos'
+import { useEffect } from 'react'
+import 'aos/dist/aos.css'
+function BoxContainer(props){
+    return(
+        <div className="card-conteiner">
+            {props.children}
+        </div>
+    )
+}
+
+function ItemConteiner(props){
+    useEffect(()=>{
+        Aos.init({duration:1500})
+    },[])
+    return(
+        <a href={props.link} target='_blank' rel='NOREFERRER' data-aos='fade-up' >
+            <div className="cardA" >
+                <div className="imgBoxA">
+                    <img src={props.url} alt="aoba" className="imgImage drag"/>
+                </div>
+                <div className="card-contentA">
+                    <h2>{props.title}</h2>
+                    <p>{props.content}</p>
+                </div>
+            </div>
+        </a>
+    )
+}
 
 function About(){
     return(
@@ -15,27 +45,27 @@ function About(){
                 <ItemConteiner
                     url={github}
                     title='Github'
-                    content={<a href='https://github.com/Kaolhou' target='_blank' rel="noreferrer">Link</a>}
+                    link='https://github.com/Kaolhou'
                 />
                 <ItemConteiner
                     url={linkedin}
                     title='Linkedin'
-                    content={<a href='https://www.linkedin.com/in/andremrocha-3ab925193/' target='_blank' rel="noreferrer">Link</a>}
+                    link='https://www.linkedin.com/in/andremrocha-3ab925193/'
                 />
                 <ItemConteiner
                     url={instagram}
                     title='Instagram'
-                    content={<a href='https://www.instagram.com/andre._.mendess/' target='_blank' rel="noreferrer">Link</a>}
+                    link='https://www.instagram.com/andre._.mendess/'
                 />
                 <ItemConteiner
                     url={twitter}
                     title='Twitter'
-                    content={<a href='https://twitter.com/Kaolhou' target='_blank' rel="noreferrer">Link</a>}
+                    link='https://twitter.com/Kaolhou'
                 />
                 <ItemConteiner
                     url={twitch}
                     title='Twitch'
-                    content={<a href='https://www.twitch.tv/kaolhou' target='_blank' rel="noreferrer">Link</a>}
+                    link='https://www.twitch.tv/kaolhou'
                 />
                 <ItemConteiner
                     url={gmail}

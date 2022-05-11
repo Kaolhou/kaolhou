@@ -16,7 +16,7 @@ function Footer(){
     },[])
     return(
         <footer>
-            <p>Feito com ❤ por André Mendes</p>
+            <p>Feito com ♥ por <a href='/about' className='und'>André Mendes</a></p>
             <p>Updated At: {dat}</p>
         </footer>
     )

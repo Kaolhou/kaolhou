@@ -3,6 +3,6 @@
     @apply flex flex-wrap justify-center 
 }
 .card{
-    @apply min-w-[10em] bg-[#333333] m-2 p-4 rounded-lg select-none
+    @apply min-w-[10em] max-w-[10em] min-h-[208px] bg-[#333333] m-2 p-4 rounded-lg select-none shadow-xl
     /* todo bg statement is not reciving the color pallete */
 }

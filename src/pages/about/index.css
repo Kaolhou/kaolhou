@@ -1,9 +1,25 @@
+/* .card-conteinerA{
+    @apply flex m-auto items-stretch flex-wrap gap-y-5
+}
 .cardA{
-    @apply flex bg-[#333333] m-2 p-4 rounded-lg select-none shadow-xl max-w-[10em]
+    @apply flex bg-[#333333] m-2 p-4 rounded-lg select-none shadow-xl flex-col h-[100%]
 }
 .imgBoxA>img{
     @apply w-[100%]
 }
 .imgBoxA{
-    @apply max-w-[96em]
+    @apply w-32
+} */
+
+.card-conteinerA{
+    @apply flex gap-2 flex-wrap justify-center items-stretch max-w-[40em] m-auto my-6
+}
+.cardA{
+    @apply bg-pallete-3 p-4 rounded-lg hover:bg-pallete-1 transition-colors
+}
+/*.imgBoxA>img{
+    @apply 
+}*/
+.imgBoxA{
+    @apply w-32 h-32 flex items-center justify-center m-0
 }

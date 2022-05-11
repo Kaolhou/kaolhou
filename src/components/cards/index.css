@@ -3,6 +3,8 @@
     @apply flex flex-wrap justify-center 
 }
 .card{
-    @apply min-w-[10em] max-w-[10em] min-h-[208px] bg-[#333333] m-2 p-4 rounded-lg select-none shadow-xl
+    @apply min-w-[10em] max-w-[10em] min-h-[208px] bg-[#333333] m-2 p-4 rounded-lg 
+    select-none shadow-[5px_7px_20px_0_rgba(0,0,0,.5)] hover:shadow-[0px_0px_10px_0_rgba(0,0,0,.5)] 
+    transition-shadow
     /* todo bg statement is not reciving the color pallete */
 }

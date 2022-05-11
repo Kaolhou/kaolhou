@@ -3,7 +3,7 @@ import github from '../../media/github.png'
 import instagram from '../../media/instagram.png'
 import twitter from '../../media/twitter.png'
 import twitch from '../../media/twitch-55.png'
-import gmail from '../../media/gmail.png'
+//import gmail from '../../media/gmail.png'
 import linkedin from '../../media/linkedin.png'
 
 //devido a um erro de estilização tirei a importação para poder dar classes diferentes
@@ -12,7 +12,7 @@ import { useEffect } from 'react'
 import 'aos/dist/aos.css'
 function BoxContainer(props){
     return(
-        <div className="card-conteiner">
+        <div className="card-conteinerA">
             {props.children}
         </div>
     )
@@ -66,11 +66,6 @@ function About(){
                     url={twitch}
                     title='Twitch'
                     link='https://www.twitch.tv/kaolhou'
-                />
-                <ItemConteiner
-                    url={gmail}
-                    title='E-mail'
-                    content='xdroid42@gmail.com'
                 />
             </BoxContainer>
         </div>

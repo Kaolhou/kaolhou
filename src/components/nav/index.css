@@ -1,12 +1,9 @@
-nav.navbar{
-    background-color: var(--color-pallete2);
-    height: 54px;
+.navbar{
+    @apply bg-pallete-4
 }
-nav.navbar > ul.navbaritem{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+ul{
+    @apply flex justify-center
+}
+.icon-button{
+    @apply p-3 hover:bg-pallete-1 transition-colors uppercase
 }

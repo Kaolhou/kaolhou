@@ -11,7 +11,7 @@ function ItemConteiner(props){
     return(
         <div className="card">
             <div className="imgBox">
-                <img src={props.url} alt="aoba" className="person"/>
+                <img src={props.url} alt="aoba" className="person drag"/>
             </div>
             <div className="card-content">
                 <h2>{props.title}</h2>

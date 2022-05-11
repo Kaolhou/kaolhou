@@ -1,5 +1,5 @@
 import './App.css';
-import NavBar from './components/nav/index'
+import { NavBar } from './components/nav/index'
 import Routes from './routes'
 import Footer from './components/footer';
 import { BrowserRouter as Router, Link} from 'react-router-dom';
@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Link} from 'react-router-dom';
 function Item(props){
     return(
         <Link to={props.path} className='icon-button'>
-            <li className='nav-item'>
+            <li className='nav-item' style={{fontWeight: 'bold'}}>
                 {props.icon}
             </li>
         </Link>

@@ -1,29 +1,11 @@
+
 .content{
-    padding: 5px 5px;
-    display: flex;
-    max-width: 1100px;
-    margin: auto;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    @apply flex flex-wrap gap-10 justify-center py-5
 }
 
-.content > .data{
-    padding: 15px;
-    max-width: 500px;
-    font-size: large;
-    text-align: justify;
+.content>div.data{
+    @apply max-w-md text-justify
 }
-
-.languages{
-    margin-top: 20px;
-}
-.img{
-    border-radius: 10px;
-    padding: 15px;
-    max-width: 400px;
-}
-.img > img{
-    width: 100%;
-    border-radius: 7px;
+.content>div.img{
+    @apply max-w-sm rounded-xl overflow-hidden 
 }

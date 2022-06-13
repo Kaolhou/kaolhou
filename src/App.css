@@ -3,11 +3,14 @@
 @tailwind utilities;
 
 :root{
-    @apply bg-pallete-5 text-pallete-2
+    @apply bg-pallete-5 text-pallete-2 selection:bg-pallete-1
 }
 .home-conteiner, #about-container{
-    @apply px-0 sm:px-10 lg:px-32 mx-3 
+    @apply px-0 sm:px-10 lg:px-32 mx-3
 }
 h1{
     @apply text-4xl py-3 font-ubuntu
+}
+a.und{
+    @apply underline underline-offset-2 hover:opacity-75 transition-opacity
 }
